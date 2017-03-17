@@ -23,7 +23,7 @@ The robotics library reads libsolid.so, so we need to make a link to the version
 sudo cp /usr/local/lib/libsolid3.so /usr/local/lib/libsolid.so
 ```
 
-# Install robotics library
+## Install robotics library
 ```
 sudo add-apt-repository ppa:roblib/ppa
 sudo apt-get update
@@ -38,7 +38,7 @@ tar -xvzf 0.6.2.tar.gz
 cd rl-0.6.2
 ```
 
-# Install release version
+## Install release version
 ```
 mkdir Release
 cd Release
@@ -48,7 +48,7 @@ sudo make install
 sudo ldconfig
 ```
 
-# Install debug version
+## Install debug version
 ```
 mkdir Debug
 cd Debug
@@ -58,7 +58,7 @@ sudo make install
 sudo ldconfig
 ```
 
-# Install bullet
+## Install bullet
 Don't install it before compiling robotics library, some errors will occur.
 ```
 sudo apt-get install python2.7-dev
@@ -71,6 +71,6 @@ make
 sudo make install
 ```
 
-# Qt Creator
+## Qt Creator
 install qt creator through Ubuntu Software Center, don't download from the Qt website, won't work.
 
