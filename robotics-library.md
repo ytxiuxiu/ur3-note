@@ -1,3 +1,4 @@
+Only for Ubuntu 12.04
 ```
 sudo apt-get install build-essential cmake
 sudo apt-get install cmake-curses-gui cmake-gui
@@ -34,6 +35,7 @@ cmake ..
 make  // not working...
 sudo make install
 sudo ldconfig
-
 ```
+
+install qt creator through Ubuntu Software Center
 
