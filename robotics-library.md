@@ -1,3 +1,5 @@
+# How to build a robotics library development environment
+
 Only for Ubuntu 12.04
 ```
 sudo apt-get install build-essential cmake
@@ -31,8 +33,8 @@ tar -xvzf 0.6.2.tar.gz
 cd rl-0.6.2
 mkdir Release
 cd Release
-cmake ..
-make  // not working...
+cmake -D BUILD_DEMOS=OFF ..
+make
 sudo make install
 sudo ldconfig
 ```
