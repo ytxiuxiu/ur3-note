@@ -8,7 +8,7 @@ sudo apt-get install build-essential cmake
 sudo apt-get install cmake-curses-gui cmake-gui
 ```
 
-# Install solid
+## Install SOLID
 ```
 git clone 
 cd solid3
@@ -17,6 +17,9 @@ cd Release
 cmake ..
 make
 sudo make install
+```
+The robotics library reads libsolid.so, so we need to make a link to the version 3 .so file. Old version of SOLID no longer exists on the Internet.
+```
 sudo cp /usr/local/lib/libsolid3.so /usr/local/lib/libsolid.so
 ```
 
@@ -56,7 +59,7 @@ sudo ldconfig
 ```
 
 # Install bullet
-Don't install it before compiling robotics library
+Don't install it before compiling robotics library, some errors will occur.
 ```
 sudo apt-get install python2.7-dev
 
@@ -69,5 +72,5 @@ sudo make install
 ```
 
 # Qt Creator
-install qt creator through Ubuntu Software Center
+install qt creator through Ubuntu Software Center, don't download from the Qt website, won't work.
 
