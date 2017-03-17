@@ -1,12 +1,14 @@
 # How to build a robotics library development environment
 
 Only for Ubuntu 12.04
+
+## Build tools
 ```
 sudo apt-get install build-essential cmake
 sudo apt-get install cmake-curses-gui cmake-gui
 ```
 
-install solid
+# Install solid
 ```
 git clone 
 cd solid3
@@ -18,7 +20,7 @@ sudo make install
 sudo cp /usr/local/lib/libsolid3.so /usr/local/lib/libsolid.so
 ```
 
-install robotics library
+# Install robotics library
 ```
 sudo add-apt-repository ppa:roblib/ppa
 sudo apt-get update
@@ -31,16 +33,30 @@ sudo apt-get install librl librl-dev
 wget https://github.com/roboticslibrary/rl/archive/0.6.2.tar.gz
 tar -xvzf 0.6.2.tar.gz
 cd rl-0.6.2
+```
+
+# Install release version
+```
 mkdir Release
 cd Release
 cmake -D BUILD_DEMOS=OFF ..
-// if build with debug information -DCMAKE_BUILD_TYPE=Debug
 make
 sudo make install
 sudo ldconfig
 ```
 
-install bullet
+# Install debug version
+```
+mkdir Debug
+cd Debug
+cmake -D BUILD_DEMOS=OFF -DCMAKE_BUILD_TYPE=Debug ..
+make
+sudo make install
+sudo ldconfig
+```
+
+# Install bullet
+Don't install it before compiling robotics library
 ```
 sudo apt-get install python2.7-dev
 
@@ -52,5 +68,6 @@ make
 sudo make install
 ```
 
+# Qt Creator
 install qt creator through Ubuntu Software Center
 
