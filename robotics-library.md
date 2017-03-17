@@ -46,6 +46,7 @@ cd rl-0.6.2
 mkdir Release
 cd Release
 cmake -D BUILD_DEMOS=OFF ..
+// if build with debug information -DCMAKE_BUILD_TYPE=Debug
 make
 sudo make install
 sudo ldconfig
