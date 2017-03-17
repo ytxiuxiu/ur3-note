@@ -58,7 +58,7 @@ sudo make install
 sudo ldconfig
 ```
 
-## Install bullet
+## __Install bullet__
 Don't install it before compiling robotics library, some errors will occur.
 ```
 sudo apt-get install python2.7-dev
