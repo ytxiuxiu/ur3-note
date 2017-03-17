@@ -6,6 +6,18 @@ sudo apt-get install build-essential cmake
 sudo apt-get install cmake-curses-gui cmake-gui
 ```
 
+install solid
+```
+git clone 
+cd solid3
+mkdir Release
+cd Release
+cmake ..
+make
+sudo make install
+sudo cp /usr/local/lib/libsolid3.so /usr/local/lib/libsolid.so
+```
+
 install bullet
 ```
 sudo apt-get install python2.7-dev
