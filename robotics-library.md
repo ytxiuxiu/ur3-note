@@ -18,18 +18,6 @@ sudo make install
 sudo cp /usr/local/lib/libsolid3.so /usr/local/lib/libsolid.so
 ```
 
-install bullet
-```
-sudo apt-get install python2.7-dev
-
-git clone https://github.com/bulletphysics/bullet3.git
-cd bullet3
-./build_cmake_pybullet_double.sh
-cd build_cmake
-make
-sudo make install
-```
-
 install robotics library
 ```
 sudo add-apt-repository ppa:roblib/ppa
@@ -50,6 +38,18 @@ cmake -D BUILD_DEMOS=OFF ..
 make
 sudo make install
 sudo ldconfig
+```
+
+install bullet
+```
+sudo apt-get install python2.7-dev
+
+git clone https://github.com/bulletphysics/bullet3.git
+cd bullet3
+./build_cmake_pybullet_double.sh
+cd build_cmake
+make
+sudo make install
 ```
 
 install qt creator through Ubuntu Software Center
