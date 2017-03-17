@@ -58,7 +58,9 @@ sudo make install
 sudo ldconfig
 ```
 
-## __Install bullet__
+## Install bulle
+**Don't install this...**
+
 Don't install it before compiling robotics library, some errors will occur.
 ```
 sudo apt-get install python2.7-dev
@@ -74,3 +76,23 @@ sudo make install
 ## Qt Creator
 install qt creator through Ubuntu Software Center, don't download from the Qt website, won't work.
 
+include these in the .pro file
+```
+INCLUDEPATH += /usr/include/eigen3 \
+    /usr/local/include/bullet
+
+LIBS += /usr/local/lib/librlmathd.a \
+    /usr/local/lib/librlutild.a \
+    /usr/local/lib/librlxmld.a \
+    /usr/local/lib/librlmdld.so \
+    /usr/local/lib/librlhald.so \
+    /usr/local/lib/librlsgd.so \
+    /usr/local/lib/librlpland.so \
+    /usr/lib/libCoin.so.60 \
+    /usr/lib/libSoQt4.a \
+    /usr/lib/x86_64-linux-gnu/libX11.so.6 \
+    /usr/lib/libCGAL.so.9 \
+    -DYADE_CGAL -frounding-math
+
+QMAKE_CXXFLAGS += -DYADE_CGAL -frounding-math
+```
